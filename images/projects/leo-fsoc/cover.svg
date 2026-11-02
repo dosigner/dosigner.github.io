@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#F0EEE9" />
+  
+  <!-- Subtle Grid -->
+  <g stroke="#D8D2C8" stroke-width="1" stroke-opacity="0.4">
+    <line x1="0" y1="135" x2="1200" y2="135" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="0" y1="405" x2="1200" y2="405" />
+    <line x1="0" y1="540" x2="1200" y2="540" />
+    <line x1="240" y1="0" x2="240" y2="675" />
+    <line x1="480" y1="0" x2="480" y2="675" />
+    <line x1="720" y1="0" x2="720" y2="675" />
+    <line x1="960" y1="0" x2="960" y2="675" />
+  </g>
+
+  <!-- LEO Satellite Orbit (Top) -->
+  <path d="M 100 150 Q 600 50, 1100 150" fill="none" stroke="#7C8472" stroke-width="2" stroke-dasharray="8 8" />
+  
+  <!-- Satellite Node -->
+  <g transform="translate(850, 95)">
+    <rect x="-30" y="-10" width="60" height="20" fill="#EBE5DC" stroke="#2D2A26" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" fill="#C66A3D" />
+    <line x1="-40" y1="0" x2="-30" y2="0" stroke="#2D2A26" stroke-width="2" />
+    <line x1="30" y1="0" x2="40" y2="0" stroke="#2D2A26" stroke-width="2" />
+  </g>
+
+  <!-- Ground Terminal (Bottom) -->
+  <g transform="translate(350, 550)">
+    <polygon points="-40,40 40,40 20,-20 -20,-20" fill="#EBE5DC" stroke="#2D2A26" stroke-width="2" />
+    <circle cx="0" cy="-20" r="10" fill="#2D2A26" />
+    <!-- Emitted Beam -->
+    <path d="M -5 -25 L 480 -445 L 500 -435 L 5 -25 Z" fill="#C66A3D" opacity="0.15" />
+    <line x1="0" y1="-20" x2="490" y2="-440" stroke="#C66A3D" stroke-width="2" stroke-dasharray="12 6" />
+  </g>
+
+  <!-- Atmospheric Turbulence Layers (Middle) -->
+  <g stroke="#7C8472" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M 200 300 Q 350 250, 500 320 T 800 280 T 1100 350" />
+    <path d="M 150 400 Q 300 450, 450 380 T 750 420 T 1050 380" />
+  </g>
+
+  <!-- Distorted Wavefronts (Near Ground) -->
+  <g stroke="#C66A3D" stroke-width="2" fill="none" transform="translate(420, 400) rotate(-40)">
+    <path d="M -40 -30 Q 0 -50, 40 -20" />
+    <path d="M -50 0 Q 0 -20, 50 10" />
+    <path d="M -60 30 Q 0 10, 60 40" />
+  </g>
+
+  <!-- RL Agent / Neural Net (Right Side UI) -->
+  <g transform="translate(850, 400)">
+    <rect x="0" y="0" width="250" height="150" fill="#FBFAF7" stroke="#D8D2C8" stroke-width="1" rx="8" />
+    <text x="20" y="30" font-family="monospace" font-size="12" fill="#625C55" letter-spacing="1">AGENT_POLICY // LSTM-SAC</text>
+    <line x1="20" y1="45" x2="230" y2="45" stroke="#D8D2C8" stroke-width="1" />
+    
+    <!-- Network Nodes -->
+    <circle cx="40" cy="70" r="4" fill="#2D2A26" />
+    <circle cx="40" cy="100" r="4" fill="#2D2A26" />
+    <circle cx="40" cy="130" r="4" fill="#2D2A26" />
+    
+    <circle cx="125" cy="60" r="5" fill="#7C8472" />
+    <circle cx="125" cy="85" r="5" fill="#7C8472" />
+    <circle cx="125" cy="115" r="5" fill="#7C8472" />
+    <circle cx="125" cy="140" r="5" fill="#7C8472" />
+    
+    <circle cx="210" cy="100" r="6" fill="#C66A3D" />
+
+    <!-- Connections -->
+    <g stroke="#D8D2C8" stroke-width="1" opacity="0.6">
+      <line x1="40" y1="70" x2="125" y2="60" />
+      <line x1="40" y1="70" x2="125" y2="85" />
+      <line x1="40" y1="100" x2="125" y2="85" />
+      <line x1="40" y1="100" x2="125" y2="115" />
+      <line x1="40" y1="130" x2="125" y2="115" />
+      <line x1="40" y1="130" x2="125" y2="140" />
+      
+      <line x1="125" y1="60" x2="210" y2="100" />
+      <line x1="125" y1="85" x2="210" y2="100" stroke="#C66A3D" stroke-width="2" opacity="1" /> <!-- Activated path -->
+      <line x1="125" y1="115" x2="210" y2="100" />
+      <line x1="125" y1="140" x2="210" y2="100" />
+    </g>
+  </g>
+
+  <!-- Technical Marks -->
+  <text x="50" y="50" font-family="monospace" font-size="14" fill="#8E857A" letter-spacing="2">PROJECT_02 // LEO_FSOC_BEAM_CONTROL</text>
+  <text x="50" y="620" font-family="monospace" font-size="12" fill="#8E857A">RX_INTENSITY: 0.84 // TURB_STR: Cn2 1e-14 // RWD: +12.4</text>
+</svg>

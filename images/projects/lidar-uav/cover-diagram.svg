@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-label="UAV-mounted gimbal LiDAR scanning a terrain profile">
+  <!-- Palette: bench surface #FAFBF9 · carbon ink #212327 · focal amber #A34E22 · sage #6F7A68 · border #DBDDD7 · dim #8A8E8A -->
+  <rect width="960" height="600" fill="#FAFBF9"/>
+
+  <!-- flight path (sage, dashed) -->
+  <line x1="300" y1="108" x2="680" y2="108" stroke="#6F7A68" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.6"/>
+  <path d="M680 108 l-12 -5 v10 Z" fill="#6F7A68" opacity="0.6"/>
+
+  <!-- UAV body (side view) -->
+  <g stroke="#212327" stroke-width="2" fill="#FAFBF9">
+    <!-- arms -->
+    <line x1="450" y1="146" x2="382" y2="132"/>
+    <line x1="510" y1="146" x2="578" y2="132"/>
+    <!-- rotor masts + blades -->
+    <line x1="382" y1="132" x2="382" y2="122"/>
+    <line x1="578" y1="132" x2="578" y2="122"/>
+    <line x1="348" y1="122" x2="416" y2="122" stroke-width="2.5"/>
+    <line x1="544" y1="122" x2="612" y2="122" stroke-width="2.5"/>
+    <!-- body -->
+    <rect x="446" y="136" width="68" height="26" rx="8"/>
+    <!-- legs -->
+    <line x1="458" y1="162" x2="450" y2="178"/>
+    <line x1="502" y1="162" x2="510" y2="178"/>
+  </g>
+
+  <!-- gimbal + LiDAR head -->
+  <circle cx="480" cy="176" r="9" fill="none" stroke="#212327" stroke-width="2"/>
+  <rect x="468" y="186" width="24" height="20" rx="3" fill="#FAFBF9" stroke="#212327" stroke-width="2"/>
+  <!-- gimbal sweep hint -->
+  <path d="M451 196 A 30 30 0 0 1 458 172" fill="none" stroke="#6F7A68" stroke-width="1.5" opacity="0.6"/>
+  <path d="M509 196 A 30 30 0 0 0 502 172" fill="none" stroke="#6F7A68" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- scan fan (amber) -->
+  <path d="M480 208 L 300 462 L 660 452 Z" fill="rgba(163,78,34,0.06)"/>
+  <g stroke="#A34E22" stroke-width="1.5">
+    <line x1="480" y1="208" x2="300" y2="462"/>
+    <line x1="480" y1="208" x2="660" y2="452"/>
+  </g>
+  <g stroke="#A34E22" stroke-width="1" opacity="0.35">
+    <line x1="480" y1="208" x2="345" y2="468"/>
+    <line x1="480" y1="208" x2="390" y2="474"/>
+    <line x1="480" y1="208" x2="435" y2="464"/>
+    <line x1="480" y1="208" x2="480" y2="452"/>
+    <line x1="480" y1="208" x2="525" y2="440"/>
+    <line x1="480" y1="208" x2="570" y2="452"/>
+    <line x1="480" y1="208" x2="615" y2="460"/>
+  </g>
+
+  <!-- terrain profile (ink) -->
+  <polyline points="60,486 150,484 220,478 290,464 345,468 390,474 420,458 435,464 460,448 480,452 505,436 525,440 555,446 570,452 600,466 615,460 660,452 720,462 800,472 900,470" fill="none" stroke="#212327" stroke-width="2"/>
+
+  <!-- sampled returns (amber point cloud along scanned segment) -->
+  <g fill="#A34E22">
+    <circle cx="300" cy="462" r="3.5"/>
+    <circle cx="345" cy="468" r="3.5"/>
+    <circle cx="390" cy="474" r="3.5"/>
+    <circle cx="435" cy="464" r="3.5"/>
+    <circle cx="480" cy="452" r="3.5"/>
+    <circle cx="525" cy="440" r="3.5"/>
+    <circle cx="570" cy="452" r="3.5"/>
+    <circle cx="615" cy="460" r="3.5"/>
+    <circle cx="660" cy="452" r="3.5"/>
+  </g>
+
+  <!-- labels (mono, generic concepts only) -->
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" letter-spacing="2" fill="#8A8E8A">
+    <text x="490" y="88" text-anchor="middle">FLIGHT PATH</text>
+    <text x="252" y="196" text-anchor="end">GIMBAL LiDAR</text>
+    <text x="700" y="330" text-anchor="start">SCAN PATTERN</text>
+    <text x="480" y="548" text-anchor="middle">TERRAIN PROFILE</text>
+  </g>
+  <line x1="262" y1="192" x2="462" y2="192" stroke="#8A8E8A" stroke-width="1" stroke-dasharray="2 4"/>
+  <line x1="692" y1="326" x2="600" y2="326" stroke="#8A8E8A" stroke-width="1" stroke-dasharray="2 4"/>
+</svg>

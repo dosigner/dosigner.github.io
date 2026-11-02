@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Bottleneck mark: rays converge to the focal point, spectrum leaves it -->
+  <rect width="32" height="32" rx="7" fill="#212327"/>
+  <g stroke="#F2F3F0" stroke-width="1.7" stroke-linecap="round" opacity="0.9">
+    <path d="M5 9 L13.5 14.2"/>
+    <path d="M4 16 L12.5 16"/>
+    <path d="M5 23 L13.5 17.8"/>
+  </g>
+  <circle cx="18" cy="16" r="4.4" fill="#A34E22"/>
+  <g stroke-width="1.7" stroke-linecap="round">
+    <path d="M23.5 13.4 L28 11.8" stroke="#D9915B"/>
+    <path d="M23.8 16 L28.5 16" stroke="#9BA58F"/>
+    <path d="M23.5 18.6 L28 20.2" stroke="#8B84C4"/>
+  </g>
+</svg>

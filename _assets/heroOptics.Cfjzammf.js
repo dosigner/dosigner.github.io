@@ -1,0 +1,1 @@
+const r={focal:{x:.64,y:.48},sourceX:-.02,sources:[.86,.74,.63,.54],spectrum:{halfAngle:.3,redNm:700,violetNm:400,labels:[.2,.4,.6,.8]},loop:{tau:.17,tiltAmp:.045,drive:3.2,reach:.05},scroll:{spread:.75,swing:-.16}};function a(s,e,l){return l+e*r.spectrum.halfAngle*(1-2*s)}const c="prism:bench",n="prism:live";export{c as B,r as H,n as L,a as f};

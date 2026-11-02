@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#F0EEE9" />
+  
+  <!-- Subtle Grid -->
+  <g stroke="#D8D2C8" stroke-width="1" stroke-opacity="0.4">
+    <line x1="0" y1="135" x2="1200" y2="135" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="0" y1="405" x2="1200" y2="405" />
+    <line x1="0" y1="540" x2="1200" y2="540" />
+    <line x1="240" y1="0" x2="240" y2="675" />
+    <line x1="480" y1="0" x2="480" y2="675" />
+    <line x1="720" y1="0" x2="720" y2="675" />
+    <line x1="960" y1="0" x2="960" y2="675" />
+  </g>
+
+  <!-- Projection Source (Top) -->
+  <g transform="translate(600, 80)">
+    <rect x="-40" y="-20" width="80" height="40" fill="#2D2A26" rx="4" />
+    <circle cx="0" cy="20" r="15" fill="#EBE5DC" stroke="#8C7A6B" stroke-width="3" />
+    <circle cx="0" cy="20" r="6" fill="#C66A3D" />
+  </g>
+
+  <!-- Projection Cone -->
+  <polygon points="600,100 200,550 1000,550" fill="#C66A3D" opacity="0.05" />
+  <line x1="600" y1="100" x2="200" y2="550" stroke="#C66A3D" stroke-width="1" stroke-dasharray="10 10" opacity="0.3" />
+  <line x1="600" y1="100" x2="1000" y2="550" stroke="#C66A3D" stroke-width="1" stroke-dasharray="10 10" opacity="0.3" />
+
+  <!-- Dining Table Surface -->
+  <ellipse cx="600" cy="550" rx="450" ry="100" fill="#FBFAF7" stroke="#D8D2C8" stroke-width="2" />
+  <ellipse cx="600" cy="550" rx="430" ry="90" fill="none" stroke="#EBE5DC" stroke-width="1" />
+
+  <!-- CV Detection / MediaPipe Nodes on Table -->
+  <!-- Hand / Object 1 -->
+  <g transform="translate(450, 520)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#C66A3D" stroke-width="2" />
+    <rect x="-35" y="-35" width="70" height="70" fill="none" stroke="#8C7A6B" stroke-dasharray="4 4" stroke-width="1.5" />
+    <circle cx="-10" cy="-5" r="4" fill="#2D2A26" />
+    <circle cx="10" cy="-10" r="4" fill="#2D2A26" />
+    <circle cx="15" cy="15" r="4" fill="#2D2A26" />
+    <circle cx="-5" cy="10" r="4" fill="#2D2A26" />
+    <path d="M -10 -5 L 10 -10 L 15 15 L -5 10 Z" fill="none" stroke="#2D2A26" stroke-width="1.5" />
+    <text x="-35" y="-45" font-family="monospace" font-size="10" fill="#C66A3D">OBJ_DETECT: 0.98</text>
+  </g>
+
+  <!-- Interactive Light Ripple (Reaction to Object) -->
+  <circle cx="450" cy="520" r="60" fill="none" stroke="#C66A3D" stroke-width="1" opacity="0.4" />
+  <circle cx="450" cy="520" r="90" fill="none" stroke="#C66A3D" stroke-width="0.5" opacity="0.2" />
+
+  <!-- Object 2 -->
+  <g transform="translate(750, 570)">
+    <circle cx="0" cy="0" r="35" fill="#EBE5DC" stroke="#8C7A6B" stroke-width="2" />
+    <rect x="-45" y="-45" width="90" height="90" fill="none" stroke="#8E857A" stroke-dasharray="4 4" stroke-width="1" />
+    <!-- Connecting line to projector indicating active tracking -->
+    <line x1="0" y1="-45" x2="-150" y2="-470" stroke="#8C7A6B" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
+    <text x="-45" y="-55" font-family="monospace" font-size="10" fill="#8E857A">PLATE_ID_02 // MAPPED</text>
+  </g>
+
+  <!-- Data UI Overlay -->
+  <g transform="translate(100, 200)">
+    <rect x="0" y="0" width="220" height="120" fill="#FBFAF7" stroke="#D8D2C8" stroke-width="1" rx="4" />
+    <text x="20" y="30" font-family="monospace" font-size="12" fill="#625C55" letter-spacing="1">CV_PIPELINE // ACTIVE</text>
+    <line x1="20" y1="45" x2="200" y2="45" stroke="#D8D2C8" stroke-width="1" />
+    <text x="20" y="70" font-family="monospace" font-size="11" fill="#8E857A">FPS: 59.9</text>
+    <text x="20" y="90" font-family="monospace" font-size="11" fill="#C66A3D">LATENCY: 16ms</text>
+    <text x="20" y="110" font-family="monospace" font-size="11" fill="#8E857A">HAND_NODES: 42</text>
+  </g>
+
+  <!-- Technical Marks -->
+  <text x="50" y="50" font-family="monospace" font-size="14" fill="#8E857A" letter-spacing="2">PROJECT_01 // DELIGHTING_INTERACTIVE</text>
+  <text x="950" y="620" font-family="monospace" font-size="12" fill="#8E857A">SYS: THREE.JS + MEDIAPIPE</text>
+</svg>

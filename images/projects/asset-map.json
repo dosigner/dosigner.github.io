@@ -1,0 +1,77 @@
+{
+  "leo-fsoc": {
+    "cover": "/images/projects/leo-fsoc/cover-photo.jpg",
+    "gallery": [
+      "/images/projects/leo-fsoc/cover-photo.jpg",
+      "/images/projects/leo-fsoc/gallery-01.jpg",
+      "/images/projects/leo-fsoc/gallery-03.jpg",
+      "/images/projects/leo-fsoc/demo-01.mp4",
+      "/images/projects/leo-fsoc/demo-02.mp4"
+    ]
+  },
+  "sa-soo": {
+    "cover": "/images/projects/sa-soo/gallery-01.jpg",
+    "gallery": [
+      "/images/projects/sa-soo/gallery-01.jpg",
+      "/images/projects/sa-soo/gallery-02.jpg"
+    ]
+  },
+  "truxi": {
+    "cover": "/images/projects/truxi/cover.webp",
+    "gallery": [
+      "/images/projects/truxi/cover.webp",
+      "/images/projects/truxi/gallery-06.jpg",
+      "/images/projects/truxi/gallery-04.jpg",
+      "/images/projects/truxi/gallery-05.jpg",
+      "/images/projects/truxi/gallery-02.png",
+      "/images/projects/truxi/gallery-03.jpg"
+    ]
+  },
+  "fsoc-terminal": {
+    "cover": "/images/projects/fsoc-terminal/cover-photo.jpg",
+    "gallery": [
+      "/images/projects/fsoc-terminal/cover-photo.jpg",
+      "/images/projects/fsoc-terminal/gallery-01.jpg",
+      "/images/projects/fsoc-terminal/gallery-02.jpg",
+      "/images/projects/fsoc-terminal/gallery-03.jpg",
+      "/images/projects/fsoc-terminal/gallery-04.jpg"
+    ]
+  },
+  "lidar-uav": {
+    "cover": "/images/projects/lidar-uav/cover-photo.jpg",
+    "gallery": [
+      "/images/projects/lidar-uav/cover-photo.jpg",
+      "/images/projects/lidar-uav/gallery-04.jpg",
+      "/images/projects/lidar-uav/gallery-02.jpg",
+      "/images/projects/lidar-uav/gallery-03.jpg"
+    ]
+  },
+  "delighting": {
+    "cover": "/images/projects/delighting/cover-photo.jpeg",
+    "gallery": [
+      "/images/projects/delighting/cover-photo.jpeg",
+      "/images/projects/delighting/gallery-03.jpg",
+      "/images/projects/delighting/demo-01.mp4",
+      "/images/projects/delighting/gallery-02.jpg"
+    ]
+  },
+  "lightup": {
+    "cover": "/images/projects/lightup/main.png",
+    "gallery": [
+      "/images/projects/lightup/main.png",
+      "/images/projects/lightup/cover-photo.png",
+      "/images/projects/lightup/gallery-01.png",
+      "/images/projects/lightup/gallery-02.png",
+      "/images/projects/lightup/gallery-03.png"
+    ]
+  },
+  "beavar": {
+    "cover": "/images/projects/beavar/cover-photo.png",
+    "gallery": [
+      "/images/projects/beavar/cover-photo.png",
+      "/images/projects/beavar/gallery-01.png",
+      "/images/projects/beavar/gallery-02.jpeg",
+      "/images/projects/beavar/gallery-03.jpeg"
+    ]
+  }
+}
